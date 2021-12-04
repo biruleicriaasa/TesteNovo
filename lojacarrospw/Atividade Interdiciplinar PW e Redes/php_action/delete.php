@@ -8,7 +8,7 @@
   if(isset($_POST['btn-deletar'])):
     $id = mysqli_escape_string($connect, $_POST['id']);
 
-    $sql = " DELETE FROM carros WHERE id = '$id'"; 
+    $sql = " DELETE FROM cliente WHERE id = '$id'"; 
 
     if(mysqli_query($connect, $sql )):
       header("Location: ../consultar.php?sucesso");

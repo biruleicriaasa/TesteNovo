@@ -8,7 +8,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-    <title>Loja Kindom Multimarcas</title>
+    <title>Hipnos Colchões</title>
   
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -34,44 +34,54 @@
           <h3 class="light">Relatório</h3>
             <?php 
               if(isset($_POST['btn-relatorio'])):
-                $marcaselecionada = $_POST['marcaselecionada'];
+                $cpfselecionado = $_POST['cpfselecionado'];
               endif;
             ?>
-            <h4 class="light"><?php echo $marcaselecionada; ?></h4>
+            <h4 class="light"><?php echo $cpfselecionado; ?></h4>
 
           <table class="striped">
             <thead>
               <tr>
-               <th>Marca</th>
-               <th>Modelo</th>
-               <th>Descrição</th>
-               <th>Mod/Fab</th>
-               <th>Cor</th>
-               <th>Placa</th>
-               <th>Valor</th>
+              <th>ID</th>
+               <th>Nome</th>
+               <th>Sobrenome</th>
+               <th>Nascimento</th>
+               <th>Sexo</th>
+               <th>RG</th>
+               <th>CPF</th>
+               <th>Rua</th>
+               <th>N da Casa</th>
+               <th>Bairro</th>
+               <th>Cidade</th>
+               <th>Estado</th>
              </tr>
             </thead>
             <tbody>
 
             <?php 
               if(isset($_POST['btn-relatorio'])):
-                if($marcaselecionada == "TODAS AS MARCAS"):
-                  $sql = "SELECT * FROM carros ORDER BY marca, modelo, ano_mod_fabri";
+                if($cpfselecionado == "TODOS OS CLIENTES"):
+                  $sql = "SELECT * FROM cliente ORDER BY nome, sobrenome, nascimento,
+                  sexo, rg, cpf, rua, numero, bairro, cidade, estado ";
                 else:
-                  $sql = "SELECT * FROM carros WHERE marca = '$marcaselecionada' ORDER BY marca, modelo, ano_mod_fabri";
+                  $sql = "SELECT * FROM cliente WHERE marca = '$cpfselecionado' ORDER BY nome, sobrenome, nascimento, sexo, rg, cpf, rua, numero, bairro, cidade, estado ";
                 endif;
               
                 $resultado = mysqli_query($connect, $sql);
                 while($dados = mysqli_fetch_array($resultado)):
             ?>
               <tr>
-                <td><?php echo $dados['marca'];?></td>
-                <td><?php echo $dados['modelo'];?></td>
-                <td><?php echo $dados['descricao'];?></td>
-                <td><?php echo $dados['ano_mod_fabri'];?>Mod/Fab</td>
-                <td><?php echo $dados['cor'];?></td>
-                <td><?php echo $dados['placa'];?></td>
-                <td><?php echo $dados['valor'];?></td>
+                <td><?php echo $dados['nome'];?></td>
+                <td><?php echo $dados['sobrenome'];?></td>
+                <td><?php echo $dados['nascimento'];?></td>
+                <td><?php echo $dados['sexo'];?>Mod/Fab</td>
+                <td><?php echo $dados['rg'];?></td>
+                <td><?php echo $dados['cpf'];?></td>
+                <td><?php echo $dados['rua'];?></td>
+                <td><?php echo $dados['numero'];?>Mod/Fab</td>
+                <td><?php echo $dados['bairro'];?></td>
+                <td><?php echo $dados['cidade'];?></td>
+                <td><?php echo $dados['estado'];?></td>
               </tr>
 
               <?php endwhile;

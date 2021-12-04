@@ -17,15 +17,15 @@
            <form action="php_action/report.php" target="_blank" method="POST">
            
            <div class="col s6">
-              <label for="marca">Selecione a marca</label>
-              <select name="marcaselecionada" id="marcaselecionada">
-                <option value="TODAS AS MARCAS">TODAS AS MARCAS</option>
+              <label for="cpf">Selecione o CPF</label>
+              <select name="cpfselecionado" id="cpfselecionado">
+                <option value="TODOS OS CLIENTES">TODOS OS CLIENTES</option>
                 <?php
-                  $sql = "SELECT DISTINCT marca FROM carros";
+                  $sql = "SELECT DISTINCT cpf FROM cliente";
                   $resultado = mysqli_query($connect, $sql);
                   while($dados = mysqli_fetch_array($resultado)): //inicio do laço
                 ?>
-                <option value="<?php echo $dados['marca']?>"><?php echo $dados['marca']?></option>
+                <option value="<?php echo $dados['cpf']?>"><?php echo $dados['cpf']?></option>
                 <?php endwhile; //fim do laço?> 
               </select>
             </div>

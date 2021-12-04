@@ -5,23 +5,26 @@
   //Conexão db
   include_once 'db_connect.php';
 
-  if(isset($_POST['btn-adicionar'])):
-    $marca = mysqli_escape_string($connect, $_POST['marca']);
-    $modelo = mysqli_escape_string($connect, $_POST['modelo']);
-    $descricao = mysqli_escape_string($connect, $_POST['descricao']);
-    $ano_mod_fabri = mysqli_escape_string($connect, $_POST['ano_mod_fabri']);
-    $cor = mysqli_escape_string($connect, $_POST['cor']);
-    $placa = mysqli_escape_string($connect, $_POST['placa']);
-    $valor = mysqli_escape_string($connect, $_POST['valor']);
+  if(isset($_POST['btn-cadastrar'])):
+    $nome = mysqli_escape_string($connect, $_POST['nome']);
+    $sobrenome = mysqli_escape_string($connect, $_POST['sobrenome']);
+    $nascimento = mysqli_escape_string($connect, $_POST['nascimento']);
+    $sexo = mysqli_escape_string($connect, $_POST['sexo']);
+    $RG = mysqli_escape_string($connect, $_POST['rg']);
+    $CPF = mysqli_escape_string($connect, $_POST['cpf']);
+    $rua = mysqli_escape_string($connect, $_POST['rua']);
+    $numero = mysqli_escape_string($connect, $_POST['numero']);
+    $bairro = mysqli_escape_string($connect, $_POST['bairro']);
+    $cidade = mysqli_escape_string($connect, $_POST['cidade']);
+    $estado = mysqli_escape_string($connect, $_POST['estado']);
 
-    $sql = "INSERT INTO carros  VALUES(null, '$marca', '$modelo', '$descricao', '$ano_mod_fabri', '$cor', '$placa', $valor)"; 
+    $sql = "INSERT INTO cliente VALUES(null, '$nome', '$sobrenome', '$nascimento', '$sexo', '$RG', '$CPF', '$rua', '$numero', '$bairro', '$cidade', '$estado')";    
 
-    /*$sql = "INSERT INTO carros (marca, modelo, descricao, ano_mod_fabri, cor, placa, valor ) VALUES('lindo', 'ruim', 'dndasd', '2011/2040', 'prata', '74adsd4', '1500')"; */
 
     if(mysqli_query($connect, $sql )):
       header("Location: ../consultar.php?sucesso");
     else :
-     header("Location: ../consultar.php?erroLixo");
+     header("Location: ../consultar.php?FALHA");
     endif;
   endif;
 ?>

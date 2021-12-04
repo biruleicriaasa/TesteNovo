@@ -1,9 +1,9 @@
 <?php
   //Conexão com Banco de dados
   $servername = "";
-  $usernamer = "lucas";
-  $password = "lucas";
-  $dbname = "lojacarros";
+  $usernamer = "root";
+  $password = "";
+  $dbname = "lojaDeCouchao";
   
   $connect = mysqli_connect($servername, $usernamer, $password, $dbname);
 
