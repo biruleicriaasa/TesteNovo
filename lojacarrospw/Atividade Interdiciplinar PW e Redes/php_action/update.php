@@ -24,9 +24,6 @@
              sexo = '$sexo', RG = '$RG', CPF = '$CPF', rua = '$rua', numero = '$numero', 
              bairro = '$bairro', cidade = '$cidade', estado = '$estado'  WHERE id = $id "; 
 
-   /*$sql = " UPDATE carros SET marca = 'dono do mundo', modelo = 'ruim', descricao = 'asdasdasd',
-   ano_modelo_frabri = '2014/8000', cor = 'sem cor', placa = 'nao tem placa', valor = 1477 WHERE id = 9 "; */
-
     if(mysqli_query($connect, $sql )):
       header("Location: ../consultar.php?sucesso");
     else :
