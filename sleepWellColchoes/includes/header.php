@@ -29,7 +29,6 @@
         <li><a href="index.php">Home</a></li>
         <li><a href="consultar.php">Consulta</a></li>
         <li><a href="adicionar.php">Adicionar</a></li>
-        <li><a href="relatorio.php_uname">Relátorio</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
