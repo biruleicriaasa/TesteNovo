@@ -1,0 +1,21 @@
+﻿<Window x:Class="ExameLucasFernandes.CadastrarDisciplina"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExameLucasFernandes"
+        mc:Ignorable="d"
+        Title="Cadastrar Disciplina" Height="450" Width="400">
+    <Grid>
+        <ComboBox x:Name="cbCurso" HorizontalAlignment="Left" Margin="37,101,0,0" VerticalAlignment="Top" Width="305"/>
+        <TextBox x:Name="edNomeDaDisciplina" HorizontalAlignment="Left" Height="23" Margin="37,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="305"/>
+        <Label Content="CURSO" HorizontalAlignment="Left" Margin="37,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="edCargaHoraria" HorizontalAlignment="Left" Height="23" Margin="37,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="305"/>
+        <Label Content="NOME DA DISCIPLINA" HorizontalAlignment="Left" Margin="37,140,0,0" VerticalAlignment="Top"/>
+        <Label Content="CARGA HORÁRIA" HorizontalAlignment="Left" Margin="37,200,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btSalvarDisciplina" Content="SALVAR" HorizontalAlignment="Left" Margin="37,285,0,0" VerticalAlignment="Top" Width="305" Height="32"/>
+        <Button x:Name="btCancelarDisciplina" Content="CANCELAR" HorizontalAlignment="Left" Margin="37,337,0,0" VerticalAlignment="Top" Width="305" Height="32"/>
+        <Label Content="CADASTRAR DISCIPLINA" HorizontalAlignment="Left" Margin="106,35,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

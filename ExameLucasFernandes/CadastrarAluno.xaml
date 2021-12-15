@@ -1,0 +1,28 @@
+﻿<Window x:Class="ExameLucasFernandes.CadastrarAluno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExameLucasFernandes"
+        mc:Ignorable="d"
+        Title="Cadastrar Aluno" Height="450" Width="650">
+    <Grid>
+        <TextBox x:Name="edCelular" HorizontalAlignment="Left" Height="23" Margin="344,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="CELULAR" HorizontalAlignment="Left" Margin="344,191,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="edEmail" HorizontalAlignment="Left" Height="23" Margin="40,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="262"/>
+        <Label Content="EMAIL" HorizontalAlignment="Left" Margin="44,191,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="edEndereco" HorizontalAlignment="Left" Height="23" Margin="344,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="ENDEREÇO
+               " HorizontalAlignment="Left" Margin="344,137,0,0" VerticalAlignment="Top" Width="262"/>
+        <TextBox x:Name="edCPF" HorizontalAlignment="Left" Height="23" Margin="344,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <Label Content="CPF" HorizontalAlignment="Left" Margin="344,83,0,0" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="edRG" HorizontalAlignment="Left" Height="23" Margin="40,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="262" RenderTransformOrigin="1.217,0.149"/>
+        <Label Content="RG" HorizontalAlignment="Left" Margin="40,132,0,0" VerticalAlignment="Top" Width="55"/>
+        <TextBox x:Name="edNome" HorizontalAlignment="Left" Height="23" Margin="40,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="262"/>
+        <Label Content="NOME" HorizontalAlignment="Left" Margin="44,83,0,0" VerticalAlignment="Top" Width="98"/>
+        <Button x:Name="btSalvarAluno" Content="SALVAR" HorizontalAlignment="Left" Margin="210,273,0,0" VerticalAlignment="Top" Width="199" Height="23"/>
+        <Button x:Name="btCancelarAluno" Content="CANCELAR" HorizontalAlignment="Left" Margin="210,319,0,0" VerticalAlignment="Top" Width="199" Height="23"/>
+        <Label Content="CADASTRAR ALUNO" HorizontalAlignment="Left" Margin="250,34,0,0" VerticalAlignment="Top" Width="127"/>
+
+    </Grid>
+</Window>

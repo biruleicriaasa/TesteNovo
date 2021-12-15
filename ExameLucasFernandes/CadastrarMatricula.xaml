@@ -1,0 +1,25 @@
+﻿<Window x:Class="ExameLucasFernandes.CadastrarMatricula"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExameLucasFernandes"
+        mc:Ignorable="d"
+        Title="CadastrarMatricula" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="edData" HorizontalAlignment="Left" Height="23" Margin="51,207,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295"/>
+        <ComboBox x:Name="cbAluno" HorizontalAlignment="Left" Margin="51,83,0,0" VerticalAlignment="Top" Width="295"/>
+        <ComboBox x:Name="cbCurso" HorizontalAlignment="Left" Margin="51,138,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label Content="ALUNO" HorizontalAlignment="Left" Margin="51,57,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Label" Content="CURSO" HorizontalAlignment="Left" Margin="51,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="DATA" HorizontalAlignment="Left" Margin="51,176,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="edHorario" HorizontalAlignment="Left" Height="23" Margin="51,266,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="295"/>
+        <Label Content="HORÁRIO" HorizontalAlignment="Left" Margin="51,235,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btSalvarMatricula" Content="SALVAR" HorizontalAlignment="Left" Margin="51,304,0,0" VerticalAlignment="Top" Width="295" Height="27"/>
+        <Button x:Name="btCancelarMatricula" Content="CANCELAR" HorizontalAlignment="Left" Margin="51,354,0,0" VerticalAlignment="Top" Width="295" Height="27"/>
+        <Label Content="CADASTRAR MATRICULA" HorizontalAlignment="Left" Margin="117,25,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="tabelaDisciplinasDoCurso" HorizontalAlignment="Left" Height="206" Margin="390,83,0,0" VerticalAlignment="Top" Width="392"/>
+        <Label Content="DISCIPLINAS DO CURSO" HorizontalAlignment="Left" Margin="533,52,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

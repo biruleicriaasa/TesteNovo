@@ -1,0 +1,16 @@
+﻿<Window x:Class="ExameLucasFernandes.ListarMatricula"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExameLucasFernandes"
+        mc:Ignorable="d"
+        Title="Listar Matricula" Height="450" Width="900">
+    <Grid>
+        <DataGrid x:Name="tabelaDasMatriculas" HorizontalAlignment="Left" Height="281" Margin="32,121,0,0" VerticalAlignment="Top" Width="688"/>
+        <Button x:Name="btAtualizarMatricula" Content="ATUALIZAR" HorizontalAlignment="Left" Margin="774,121,0,0" VerticalAlignment="Top" Width="108" Height="32"/>
+        <Button x:Name="btDeletarMatricula" Content="DELETAR" HorizontalAlignment="Left" Margin="774,178,0,0" VerticalAlignment="Top" Width="108" Height="32"/>
+        <Label Content="LISTA DAS MATRICULAS" HorizontalAlignment="Left" Margin="313,71,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

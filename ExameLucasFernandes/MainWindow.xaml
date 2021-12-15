@@ -1,0 +1,21 @@
+﻿<Window x:Class="ExameLucasFernandes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExameLucasFernandes"
+        mc:Ignorable="d"
+        Title="MENU PRINCIPAL" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btListarAluno" Content="LISTAR ALUNO" HorizontalAlignment="Left" Margin="459,98,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="btListarAluno_Click"/>
+        <Button x:Name="btListarCurso" Content="LISTAR CURSO" HorizontalAlignment="Left" Margin="459,169,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="btListarCurso_Click"/>
+        <Button x:Name="btListarDisciplina" Content="LISTAR DISCIPLINA" HorizontalAlignment="Left" Margin="459,231,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="btListarDisciplina_Click"/>
+        <Button x:Name="btListarMatricula" Content="LISTAR MATRICULA" HorizontalAlignment="Left" Margin="459,295,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="btListarMatricula_Click"/>
+        <Button x:Name="btCadastrarAluno" Content="CADASTRA ALUNO" HorizontalAlignment="Left" Margin="193,98,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="btCadastrarAluno_Click"/>
+        <Button x:Name="btCadastrarCurso" Content="CADASTRAR CURSO" HorizontalAlignment="Left" Margin="193,169,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="btCadastrarCurso_Click"/>
+        <Button x:Name="btCadastarDisciplina" Content="CADASTRAR DISCIPLINA" HorizontalAlignment="Left" Margin="193,231,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="btCadastarDisciplina_Click"/>
+        <Button x:Name="btCadastrarMatricula" Content="CADASTRAR MATRICULAR" HorizontalAlignment="Left" Margin="193,295,0,0" VerticalAlignment="Top" Width="200" Height="38" Click="btCadastrarMatricula_Click"/>
+        <Label Content="MENU DE OPÇÕES" HorizontalAlignment="Left" Margin="369,45,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

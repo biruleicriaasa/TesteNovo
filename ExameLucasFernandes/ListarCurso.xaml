@@ -1,0 +1,16 @@
+﻿<Window x:Class="ExameLucasFernandes.ListarCurso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExameLucasFernandes"
+        mc:Ignorable="d"
+        Title="Listar Curso" Height="450" Width="900">
+    <Grid>
+        <DataGrid x:Name="tabelaDeCursos" HorizontalAlignment="Left" Height="277" Margin="32,116,0,0" VerticalAlignment="Top" Width="708"/>
+        <Label Content="LISTA DOS CURSOS" HorizontalAlignment="Left" Margin="314,38,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btAtualizarCurso" Content="ATUALIZAR" HorizontalAlignment="Left" Margin="767,116,0,0" VerticalAlignment="Top" Width="115" Height="27"/>
+        <Button x:Name="btDeletarCurso" Content="DELETAR" HorizontalAlignment="Left" Margin="767,166,0,0" VerticalAlignment="Top" Width="115" Height="27"/>
+
+    </Grid>
+</Window>
